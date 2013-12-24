@@ -1,0 +1,45 @@
+
+import(
+	methods,
+	MASS,
+	msm,
+	fBasics,
+	maps
+)
+
+exportMethods(
+    "hbstm.fit",
+    "hbstm",
+	"plotRes",
+	"results",
+	"estimation",
+	"plotFit",
+	"mse"
+)
+
+
+exportClasses(
+	"Autoregressive",
+	"Autoregressive0",
+	"HBSTM",
+	"Hyperpriors",
+	"Mt",
+	"Mt0",
+	"Mu",
+	"Mu0",
+	"Parameters",
+	"Seas",
+	"Seas0",
+	"SpatParam",
+	"SpatParam0",
+	"VectSubdiag",
+	"VectSubdiag0",
+	"Xt",
+	"Xt0" 
+)
+
+
+
+	
+	
+	
