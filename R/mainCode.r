@@ -88,8 +88,8 @@ setMethod(f="hbstm",signature=c("data.frame","matrix","data.frame","vector","vec
 
 	if((nIter-nBurn)!=0){
 		estYt=array(mean(HBSTM@Zt),dim=c(dim(HBSTM@newGrid)[1],dim(HBSTM@Zt)[2],nIter-nBurn))
-		msevect=rep(NA,nIter-nBurn)
 	}
+	msevect=rep(NA,nIter)
 	
 	if(HBSTM["seed"]!=-1) set.seed(HBSTM["seed"])
 	

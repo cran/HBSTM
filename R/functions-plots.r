@@ -6,6 +6,7 @@
 
 .HBSTM.resid.plot=function(object,point,ARlags,ARperiod){
 	if(missing(point)) point=sample(1:dim(object@newGrid)[1],1)	
+	if(is.na(object@fitted[1,1,1]))	stop("The object does not have stored fitted values\n")
 	Et=object@Zt-object@K%*%object@fitted[,,1]+object@Parameters@sigma2E
 	Et=Et[point,]
 	dev.new()

@@ -2,7 +2,6 @@
 import(
 	methods,
 	MASS,
-	msm,
 	fBasics,
 	maps
 )
