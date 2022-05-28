@@ -3,7 +3,11 @@ import(
 	methods,
 	MASS,
 	fBasics,
-	maps
+	maps,
+	stats,
+	graphics,
+	grDevices,
+	utils
 )
 
 exportMethods(
@@ -36,9 +40,3 @@ exportClasses(
 	"Xt",
 	"Xt0" 
 )
-
-
-
-	
-	
-	

@@ -10,7 +10,7 @@ setMethod(
 	f="[",
 	signature=c("SpatC","character","missing","missing"),
 	def = function(x,i,j,drop){
-		switch(EXP=i,
+		switch(EXPR=i,
 			Matalpha	= return(x@Matalpha),
 			Matbeta		= return(x@Matbeta),
 			Matphi 		= return(x@Matphi),
@@ -24,7 +24,7 @@ setMethod(
 	f="[<-",
 	signature=c("SpatC","character","missing","ANY"),
 	def = function(x,i,j,value){
-		switch(EXP=i,
+		switch(EXPR=i,
 			Matalpha	= x@Matalpha <- value,
 			Matbeta		= x@Matbeta <- value,
 			Matphi		= x@Matphi <- value,
@@ -39,7 +39,7 @@ setMethod(
 	f="[",
 	signature=c("SpatH","character","missing","missing"),
 	def = function(x,i,j,drop){
-		switch(EXP=i,
+		switch(EXPR=i,
 			west 		= return(x@west),
 			east 		= return(x@east),
 			north		= return(x@north),
@@ -57,7 +57,7 @@ setMethod(
 	f="[<-",
 	signature=c("SpatH","character","missing","ANY"),
 	def = function(x,i,j,value){
-		switch(EXP=i,
+		switch(EXPR=i,
 			west		= x@west <- value,
 			east		= x@east <- value,
 			north		= x@north <- value,
@@ -76,7 +76,7 @@ setMethod(
 	f="[",
 	signature=c("CosSinMatrix","character","missing","missing"),
 	def = function(x,i,j,drop){
-		switch(EXP=i,
+		switch(EXPR=i,
 			cosMat			= return(x@cosMat),
 			sinMat			= return(x@sinMat),
 			littlecosMat 	= return(x@littlecosMat),
@@ -90,7 +90,7 @@ setMethod(
 	f="[<-",
 	signature=c("CosSinMatrix","character","missing","ANY"),
 	def = function(x,i,j,value){
-		switch(EXP=i,
+		switch(EXPR=i,
 			cosMat			= x@cosMat <- value,
 			sinMat			= x@sinMat <- value,
 			littlecosMat	= x@littlecosMat <- value,
@@ -105,7 +105,7 @@ setMethod(
 	f="[",
 	signature=c("MtAux","character","missing","missing"),
 	def = function(x,i,j,drop){
-		switch(EXP=i,
+		switch(EXPR=i,
 			seas	= return(x@seas),
 			stop("Error: ",i," is not a MtAux slot")
 		)
@@ -116,7 +116,7 @@ setMethod(
 	f="[<-",
 	signature=c("MtAux","character","missing","ANY"),
 	def = function(x,i,j,value){
-		switch(EXP=i,
+		switch(EXPR=i,
 			seas	= x@seas <- value
 		)
 		return(x)
@@ -128,7 +128,7 @@ setMethod(
 	f="[",
 	signature=c("HBSTM","character","missing","missing"),
 	def = function(x,i,j,drop){
-		switch(EXP=i,
+		switch(EXPR=i,
 			Parameters	= return(x@Parameters),
 			Hyperpriors	= return(x@Hyperpriors),
 			seed		= return(x@seed),
@@ -150,7 +150,7 @@ setMethod(
 	f="[<-",
 	signature=c("HBSTM","character","missing","ANY"),
 	def = function(x,i,j,value){
-		switch(EXP=i,
+		switch(EXPR=i,
 			Parameters	= x@Parameters <- value,
 			Hyperpriors	= x@Hyperpriors <- value,
 			seed		= x@seed <- value,
@@ -175,7 +175,7 @@ setMethod(
 	f="[",
 	signature=c("SpatParam","character","missing","missing"),
 	def = function(x,i,j,drop){
-		switch(EXP=i,
+		switch(EXPR=i,
 			alpha	= return(x@alpha),
 			beta	= return(x@beta),
 			phi 	= return(x@phi),
@@ -192,7 +192,7 @@ setMethod(
 	f="[<-",
 	signature=c("SpatParam","character","missing","ANY"),
 	def = function(x,i,j,value){
-		switch(EXP=i,
+		switch(EXPR=i,
 			alpha	= x@alpha <- value,
 			beta	= x@beta <- value,
 			phi		= x@phi <- value,
@@ -210,7 +210,7 @@ setMethod(
 	f="[",
 	signature=c("VectSubdiag","character","missing","missing"),
 	def = function(x,i,j,drop){
-		switch(EXP=i,
+		switch(EXPR=i,
 			east		= return(x@east),
 			west		= return(x@west),
 			north 		= return(x@north),
@@ -230,7 +230,7 @@ setMethod(
 	f="[<-",
 	signature=c("VectSubdiag","character","missing","ANY"),
 	def = function(x,i,j,value){
-		switch(EXP=i,
+		switch(EXPR=i,
 			east		= x@east <- value,
 			west		= x@west <- value,
 			north		= x@north <- value,
@@ -251,7 +251,7 @@ setMethod(
 	f="[",
 	signature=c("Seas","character","missing","missing"),
 	def = function(x,i,j,drop){
-		switch(EXP=i,
+		switch(EXPR=i,
 			w		= return(x@w),
 			fvect	= return(x@fvect),
 			f0L 	= return(x@f0L),
@@ -266,7 +266,7 @@ setMethod(
 	f="[<-",
 	signature=c("Seas","character","missing","ANY"),
 	def = function(x,i,j,value){
-		switch(EXP=i,
+		switch(EXPR=i,
 			w		= x@w <- value,
 			fvect	= x@fvect <- value,
 			f0L		= x@f0L <- value,
@@ -282,7 +282,7 @@ setMethod(
 	f="[",
 	signature=c("Autoregressive","character","missing","missing"),
 	def = function(x,i,j,drop){
-		switch(EXP=i,
+		switch(EXPR=i,
 			avect	= return(x@avect),
 			a0vect	= return(x@a0vect),
 			a0L 	= return(x@a0L),
@@ -299,7 +299,7 @@ setMethod(
 	f="[<-",
 	signature=c("Autoregressive","character","missing","ANY"),
 	def = function(x,i,j,value){
-		switch(EXP=i,
+		switch(EXPR=i,
 			avect	= x@avect <- value,
 			a0vect	= x@a0vect <- value,
 			a0L		= x@a0L <- value,
@@ -317,7 +317,7 @@ setMethod(
 	f="[",
 	signature=c("Mu","character","missing","missing"),
 	def = function(x,i,j,drop){
-		switch(EXP=i,
+		switch(EXPR=i,
 			muvect		= return(x@muvect),
 			mu0vect		= return(x@mu0vect),
 			mu0L 		= return(x@mu0L),
@@ -332,7 +332,7 @@ setMethod(
 	f="[<-",
 	signature=c("Mu","character","missing","ANY"),
 	def = function(x,i,j,value){
-		switch(EXP=i,
+		switch(EXPR=i,
 			muvect		= x@muvect <- value,
 			mu0vect		= x@mu0vect <- value,
 			mu0L		= x@mu0L <- value,
@@ -348,7 +348,7 @@ setMethod(
 	f="[",
 	signature=c("Mt","character","missing","missing"),
 	def = function(x,i,j,drop){
-		switch(EXP=i,
+		switch(EXPR=i,
 			Mt		= return(x@Mt),
 			seas	= return(x@seas),
 			stop("Error: ",i," is not a Mt slot")
@@ -360,7 +360,7 @@ setMethod(
 	f="[<-",
 	signature=c("Mt","character","missing","ANY"),
 	def = function(x,i,j,value){
-		switch(EXP=i,
+		switch(EXPR=i,
 			Mt		= x@Mt <- value,
 			seas	= x@seas <- value
 		)
@@ -373,7 +373,7 @@ setMethod(
 	f="[",
 	signature=c("Xt","character","missing","missing"),
 	def = function(x,i,j,drop){
-		switch(EXP=i,
+		switch(EXPR=i,
 			Xt		= return(x@Xt),
 			X0		= return(x@X0),
 			sigma2N 	= return(x@sigma2N),
@@ -388,7 +388,7 @@ setMethod(
 	f="[<-",
 	signature=c("Xt","character","missing","ANY"),
 	def = function(x,i,j,value){
-		switch(EXP=i,
+		switch(EXPR=i,
 			Xt		= x@Xt <- value,
 			X0		= x@X0 <- value,
 			sigma2N	= x@sigma2N <- value,
@@ -404,7 +404,7 @@ setMethod(
 	f="[",
 	signature=c("Parameters","character","missing","missing"),
 	def = function(x,i,j,drop){
-		switch(EXP=i,
+		switch(EXPR=i,
 			Mu		= return(x@Mu),
 			Mt		= return(x@Mt),
 			Xt		= return(x@Xt),
@@ -420,7 +420,7 @@ setMethod(
 	f="[<-",
 	signature=c("Parameters","character","missing","ANY"),
 	def = function(x,i,j,value){
-		switch(EXP=i,
+		switch(EXPR=i,
 			Mu		= x@Mu <- value,
 			Mt		= x@Mt <- value,
 			Xt		= x@Xt <- value,
@@ -440,7 +440,7 @@ setMethod(
 	f="[",
 	signature=c("SpatParam0","character","missing","missing"),
 	def = function(x,i,j,drop){
-		switch(EXP=i,
+		switch(EXPR=i,
 			alpha0	= return(x@alpha0),
 			beta0	= return(x@beta0),
 			phi0	= return(x@phi0),
@@ -454,7 +454,7 @@ setMethod(
 	f="[<-",
 	signature=c("SpatParam0","character","missing","ANY"),
 	def = function(x,i,j,value){
-		switch(EXP=i,
+		switch(EXPR=i,
 			alpha0	= x@alpha0 <- value,
 			beta0	= x@beta0 <- value,
 			phi0	= x@phi0 <- value,
@@ -469,7 +469,7 @@ setMethod(
 	f="[",
 	signature=c("VectSubdiag0","character","missing","missing"),
 	def = function(x,i,j,drop){
-		switch(EXP=i,
+		switch(EXPR=i,
 			east0		= return(x@east0),
 			west0		= return(x@west0),
 			north0 		= return(x@north0),
@@ -487,7 +487,7 @@ setMethod(
 	f="[<-",
 	signature=c("VectSubdiag0","character","missing","ANY"),
 	def = function(x,i,j,value){
-		switch(EXP=i,
+		switch(EXPR=i,
 			east0		= x@east0 <- value,
 			west0		= x@west0 <- value,
 			north0		= x@north0 <- value,
@@ -506,7 +506,7 @@ setMethod(
 	f="[",
 	signature=c("Seas0","character","missing","missing"),
 	def = function(x,i,j,drop){
-		switch(EXP=i,
+		switch(EXPR=i,
 			sigf0L0	= return(x@sigf0L0),
 			f0L0	= return(x@f0L0),
 			sigg0L0 = return(x@sigg0L0),
@@ -520,7 +520,7 @@ setMethod(
 	f="[<-",
 	signature=c("Seas0","character","missing","ANY"),
 	def = function(x,i,j,value){
-		switch(EXP=i,
+		switch(EXPR=i,
 			sigf0L0	= x@sigf0L0 <- value,
 			f0L0	= x@f0L0 <- value,
 			sigg0L0	= x@sigg0L0 <- value,
@@ -535,7 +535,7 @@ setMethod(
 	f="[",
 	signature=c("Autoregressive0","character","missing","missing"),
 	def = function(x,i,j,drop){
-		switch(EXP=i,
+		switch(EXPR=i,
 			a0L0 		= return(x@a0L0),
 			siga0L0 	= return(x@siga0L0),
 			sigma2A0		= return(x@sigma2A0),
@@ -550,7 +550,7 @@ setMethod(
 	f="[<-",
 	signature=c("Autoregressive0","character","missing","ANY"),
 	def = function(x,i,j,value){
-		switch(EXP=i,
+		switch(EXPR=i,
 			a0L0		= x@a0L0 <- value,
 			siga0L0		= x@siga0L0 <- value,
 			sigma2A0		= x@sigma2A0 <- value,
@@ -566,7 +566,7 @@ setMethod(
 	f="[",
 	signature=c("Mu0","character","missing","missing"),
 	def = function(x,i,j,drop){
-		switch(EXP=i,
+		switch(EXPR=i,
 			mu0L0 		= return(x@mu0L0),
 			sigmu0L0 	= return(x@sigmu0L0),
 			sigma2Mu0	= return(x@sigma2Mu0),
@@ -580,7 +580,7 @@ setMethod(
 	f="[<-",
 	signature=c("Mu0","character","missing","ANY"),
 	def = function(x,i,j,value){
-		switch(EXP=i,
+		switch(EXPR=i,
 			mu0L0		= x@mu0L0 <- value,
 			sigmu0L0	= x@sigmu0L0 <- value,
 			sigma2Mu0	= x@sigma2Mu0 <- value,
@@ -595,7 +595,7 @@ setMethod(
 	f="[",
 	signature=c("Mt0","character","missing","missing"),
 	def = function(x,i,j,drop){
-		switch(EXP=i,
+		switch(EXPR=i,
 			seas0 	= return(x@seas0),
 			stop("Error: ",i," is not a Mt0 slot")
 		)
@@ -606,7 +606,7 @@ setMethod(
 	f="[<-",
 	signature=c("Mt0","character","missing","ANY"),
 	def = function(x,i,j,value){
-		switch(EXP=i,
+		switch(EXPR=i,
 			seas0	= x@seas0 <- value
 		)
 		return(x)
@@ -618,7 +618,7 @@ setMethod(
 	f="[",
 	signature=c("Xt0","character","missing","missing"),
 	def = function(x,i,j,drop){
-		switch(EXP=i,
+		switch(EXPR=i,
 			X00 	= return(x@X00),
 			sigma2X00= return(x@sigma2X00),
 			AR0 	= return(x@AR0),
@@ -632,7 +632,7 @@ setMethod(
 	f="[<-",
 	signature=c("Xt0","character","missing","ANY"),
 	def = function(x,i,j,value){
-		switch(EXP=i,
+		switch(EXPR=i,
 			X00		= x@X00 <- value,
 			sigma2X00= x@sigma2X00 <- value,
 			AR0		= x@AR0 <- value,
@@ -647,7 +647,7 @@ setMethod(
 	f="[",
 	signature=c("Hyperpriors","character","missing","missing"),
 	def = function(x,i,j,drop){
-		switch(EXP=i,
+		switch(EXPR=i,
 			Mu0 	= return(x@Mu0),
 			Mt0 	= return(x@Mt0),
 			Xt0		= return(x@Xt0),
@@ -662,7 +662,7 @@ setMethod(
 	f="[<-",
 	signature=c("Hyperpriors","character","missing","ANY"),
 	def = function(x,i,j,value){
-		switch(EXP=i,
+		switch(EXPR=i,
 			Mu0		= x@Mu0 <- value,
 			Mt0		= x@Mt0 <- value,
 			Xt0		= x@Xt0 <- value,

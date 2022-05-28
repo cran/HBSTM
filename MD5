@@ -1,7 +1,7 @@
-d8c3f6586ee77fcd4018e85154a64555 *DESCRIPTION
-d89d2ca3f07e75a689a0e72de30e95c5 *NAMESPACE
+e2647d06634e15ed28c62bce1f7e8ae7 *DESCRIPTION
+4cf9e91f3ee5c3449180a35dcfe8b4b1 *NAMESPACE
 169cdce79c16278a8401723e880e3097 *R/1-classes.r
-3ef0354429361f87ba8bc8abcdbe1388 *R/2-gets-sets.r
+f0f7472594ddfa17d6a29b440f53fe2e *R/2-gets-sets.r
 1570ab93f10ceae5df0cd94d4ec4d475 *R/3-generics.r
 9f66845b07183bcd855aa9c12380a0be *R/functions-analysis.r
 4917e6ea1f35ec4a5ce948a5d17e88e5 *R/functions-auxiliar.r
@@ -9,10 +9,9 @@ d89d2ca3f07e75a689a0e72de30e95c5 *NAMESPACE
 0be28c6b8a9c545fa9aa4229ff029f45 *R/functions-plots.r
 c467dbbad0154e7421bf2c2f4537d0ef *R/hyperpriors-initialValues.r
 08e5df21b5375928739997a119f8de5f *R/mainCode.r
-c01fd51b1ab7508398e9b8f47ddf0e10 *data/coordinates.csv.gz
-1e7f69f1f88d52a0c201077587f28b88 *data/datalist
-cf73fc6c3e817e7c831862109d4626d9 *data/hirlam.csv.gz
-52db567afcbe16756b04e44af8fb675a *inst/doc/tutorial.pdf
+0d9270e49134f91393f521b423913c1b *data/coordinates.csv
+1ff0e3596ee43d3167aa748ddddeaea3 *data/hirlam.csv
+52db567afcbe16756b04e44af8fb675a *inst/docs/tutorial.pdf
 069c38c3bbc1e0a4607c31c88f062c4a *man/Autoregressive-class.Rd
 6c884949bcf99ab656586f264c6ae3ca *man/Autoregressive0-class.Rd
 58925e45588e6d0292b545d389beb9ce *man/HBSTM-class.Rd
@@ -35,7 +34,7 @@ aeade232527afb20242f962c7b59a01b *man/Xt0-class.Rd
 dddf86682dd2e588fbdde20851ad06ad *man/estimation.Rd
 90dbd5eb89d0c76ee6248a51e4cb3c7a *man/hbstm.Rd
 675d12b700d20dfb570518d7425b6748 *man/hbstm.fit.Rd
-d78afc14e59cf76a962e9cf77f79fcf8 *man/hirlam.rd
+25706a9507db73a06e7476d3458da4a4 *man/hirlam.rd
 1668b3847295965364768d8f5e254bb4 *man/mse.Rd
 cc390562c138770e2101823312d80492 *man/plotFit.Rd
 aa9548bf7834b2d5ba1bb36c06d5aac6 *man/plotRes.Rd

@@ -16,9 +16,9 @@ The analysed period covers January 1st 2009 to December 31st 2010; the frequency
 \format{
   A data frame with 70 x 5824 observations. 
   
-  \describe{
-    \item{}{ The rows represent the spatial points ordered from up to down and left to right in the \code{hirlam)} coordinates. }
-    \item{}{ The columns represent the time observations.}
+  \itemize{
+    \item The rows represent the spatial points ordered from up to down and left to right in the \code{hirlam)} coordinates.
+    \item The columns represent the time observations.
   }
 }
 
